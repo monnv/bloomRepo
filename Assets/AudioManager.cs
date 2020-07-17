@@ -7,7 +7,6 @@ public class AudioManager : MonoBehaviour
 
     public Sound[] sounds;
 
-
     // deletes extra audio manager from scenes
     public static AudioManager instance;
 
@@ -45,6 +44,7 @@ public class AudioManager : MonoBehaviour
     // theme music plays here
     void Start ()
     {
+
         Play("OpeningMusic");
     }
 
