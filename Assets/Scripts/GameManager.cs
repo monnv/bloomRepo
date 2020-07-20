@@ -14,11 +14,13 @@ public class GameManager : MonoBehaviour
 
     private Question currentQuestion;
 
+    private int score;
+
     [SerializeField] TextMeshProUGUI m_Text;
     private Text questionText;
 
     [SerializeField]
-    private float timeBetweenQuestions = 0.1f;
+    private float timeBetweenQuestions = 1f;
 
     private void Start()
     {
@@ -32,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-
+    // randomizes next questions
     void SetCurrentQuestion ()
     {
         int randomQuestionIndex = Random.Range(0, unansweredQuestions.Count);
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     }
 
+    // delay in next question
     IEnumerator TransitionToNextQuestion()
     {
         unansweredQuestions.Remove(currentQuestion);
@@ -76,5 +79,8 @@ public class GameManager : MonoBehaviour
         }
         StartCoroutine(TransitionToNextQuestion());
     }
+
+
+
 
 }

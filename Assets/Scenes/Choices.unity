@@ -1033,7 +1033,7 @@ MonoBehaviour:
     isTrue: 1
     isFalse: 0
   m_Text: {fileID: 1486401023}
-  timeBetweenQuestions: 1
+  timeBetweenQuestions: 0.5
 --- !u!1 &1895641159
 GameObject:
   m_ObjectHideFlags: 0
