@@ -1,22 +1,80 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections.Generic
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Linq;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
 
-    public Questions[] questions;
-    private static List<Questions> unansweredQuestions;
+    public Question[] questions;
+    private static List<Question> unansweredQuestions;
+
+    private Question currentQuestion;
+
+    [SerializeField] TextMeshProUGUI m_Text;
+    private Text questionText;
+
+    [SerializeField]
+    private float timeBetweenQuestions = 0.1f;
 
     private void Start()
     {
-        if (unansweredQuestions == null)
+        if (unansweredQuestions == null || unansweredQuestions.Count == 0)
         {
-            unansweredQuestions = questions;
+            unansweredQuestions = questions.ToList<Question>();
         }
 
+        SetCurrentQuestion();
+        Debug.Log(currentQuestion.question + " is " + currentQuestion.isTrue);
 
+    }
+
+
+    void SetCurrentQuestion ()
+    {
+        int randomQuestionIndex = Random.Range(0, unansweredQuestions.Count);
+        currentQuestion = unansweredQuestions[randomQuestionIndex];
+
+        m_Text.text = currentQuestion.question;
+
+    }
+
+    IEnumerator TransitionToNextQuestion()
+    {
+        unansweredQuestions.Remove(currentQuestion);
+
+        yield return new WaitForSeconds(timeBetweenQuestions);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
+    public void UserSelectChoice1 ()
+    {
+        if (currentQuestion.isTrue)
+        {
+            Debug.Log("CHOICE 1!");
+        } else
+        {
+            Debug.Log("CHOICE 2!");
+        }
+
+        StartCoroutine(TransitionToNextQuestion());
+    }
+    public void UserSelectChoice2 ()
+    {
+        if (!currentQuestion.isTrue)
+        {
+            Debug.Log("CHOICE 1!");
+        }
+        else
+        {
+            Debug.Log("CHOICE 2!");
+        }
+        StartCoroutine(TransitionToNextQuestion());
     }
 
 }

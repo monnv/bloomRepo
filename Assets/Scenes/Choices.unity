@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 725453165}
   - component: {fileID: 725453164}
   - component: {fileID: 725453163}
+  - component: {fileID: 725453167}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -450,6 +451,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &725453167
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725453162}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18f4679c351f99c49b7b61e518ca0087, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1407011884
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +550,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1407011887}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1658842346}
+        m_MethodName: UserSelectChoice1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1407011887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: question placeholder
+  m_text: how about temperature?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36bd48f630b0082439f180858b2de049, type: 2}
   m_sharedMaterial: {fileID: 4972323673017611953, guid: 36bd48f630b0082439f180858b2de049,
@@ -726,7 +757,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 258
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -757,15 +788,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -69.5893, y: 0, z: -61.4975, w: 0}
+  m_margin: {x: -72.7649, y: -42.589905, z: -66.79005, w: -28.758514}
   m_textInfo:
     textComponent: {fileID: 1486401023}
-    characterCount: 20
+    characterCount: 22
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -992,12 +1023,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - questions: how much water?
-    isTrue: 0
-  - questions: how much light?
-    isTrue: 0
-  - questions: how hot or cold?
-    isTrue: 0
+  - question: how much water?
+    isTrue: 1
+    isFalse: 0
+  - question: how much sunlight?
+    isTrue: 1
+    isFalse: 0
+  - question: how about temperature?
+    isTrue: 1
+    isFalse: 0
+  m_Text: {fileID: 1486401023}
+  timeBetweenQuestions: 1
 --- !u!1 &1895641159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1114,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1895641162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1658842346}
+        m_MethodName: UserSelectChoice2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1895641162
 MonoBehaviour:
   m_ObjectHideFlags: 0

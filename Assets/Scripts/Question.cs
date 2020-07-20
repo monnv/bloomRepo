@@ -1,9 +1,9 @@
 ﻿
 [System.Serializable]
-public class Questions
+public class Question
 {
 
-    public string questions;
+    public string question;
     public bool isTrue;
     public bool isFalse;
 
