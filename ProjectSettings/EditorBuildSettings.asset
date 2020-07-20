@@ -9,8 +9,53 @@ EditorBuildSettings:
     path: Assets/Scenes/_StartMenu.unity
     guid: 045cb7d27a524df44a9c064b3ad8bf1f
   - enabled: 1
-    path: Assets/Scenes/Choices.unity
+    path: Assets/Scenes/S01.unity
+    guid: f312190769d6e3e408f6fc37987540e7
+  - enabled: 1
+    path: Assets/Scenes/S02.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/S03.unity
+    guid: 379beec07d108da469a6b0f3ae9ae62a
+  - enabled: 1
+    path: Assets/Scenes/S04.unity
+    guid: 3c54fe909f402a847837f70b798ca44e
+  - enabled: 1
+    path: Assets/Scenes/S05.unity
+    guid: 2222c1ceb2c8c7940b1312656197e977
+  - enabled: 1
+    path: Assets/Scenes/S06.unity
+    guid: 243a95c845239e243b4129d1d6fb4c16
+  - enabled: 1
+    path: Assets/Scenes/S07.unity
+    guid: 01b93f03542983a4f9f35a1343745722
+  - enabled: 1
+    path: Assets/Scenes/S08.unity
+    guid: a1eb2f220b1e2fc49bab7251dbfaccb8
+  - enabled: 1
+    path: Assets/Scenes/S09.unity
+    guid: dfa71da5c1f517943bcbb1967cde78c3
+  - enabled: 1
+    path: Assets/Scenes/S10.unity
+    guid: 631eccc088ee25741929dd70c91ad04d
+  - enabled: 1
+    path: Assets/Scenes/S11.unity
+    guid: 995cbdc5992fcf945a7d5ae53091898d
+  - enabled: 1
+    path: Assets/Scenes/S12.unity
+    guid: f387945e24bdc3e44bb5bfbab0224b6d
+  - enabled: 1
+    path: Assets/Scenes/S13.unity
+    guid: 1521c63029215c54abdf2788430cfe08
+  - enabled: 1
+    path: Assets/Scenes/S14.unity
+    guid: 5d63ed491770ed844b9f9e7a2c901707
+  - enabled: 1
+    path: Assets/Scenes/S15.unity
+    guid: 4570328b5e99fcb4f8dba144f0616a7e
+  - enabled: 1
+    path: Assets/Scenes/S16.unity
+    guid: 024c02930fa7f214cba7150640fef1ab
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 5892462bd9a121c4ea3e5057ef885014
