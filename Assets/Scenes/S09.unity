@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd1de69952029d24faec578daef702c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5df3c2109f047b6489d58e8e137e0ccb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9aac5723ba290564db25ea805d2f33e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 11e92068bcedc134a88a70863a5e6062, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1509,8 +1509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: oh no... i'm not sure if i'm doing this right... it looks a little sad...
-    maybe it needs some tunes to lift it up...
+  m_text: oh no... i'm not sure if i'm doing this right... it looks a little uncomfortable?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36bd48f630b0082439f180858b2de049, type: 2}
   m_sharedMaterial: {fileID: 4972323673017611953, guid: 36bd48f630b0082439f180858b2de049,
@@ -1580,12 +1579,12 @@ MonoBehaviour:
   m_margin: {x: -65.240295, y: 0, z: -60.002502, w: -222.48737}
   m_textInfo:
     textComponent: {fileID: 755151669}
-    characterCount: 116
+    characterCount: 81
     spriteCount: 0
-    spaceCount: 23
-    wordCount: 24
+    spaceCount: 14
+    wordCount: 15
     linkCount: 0
-    lineCount: 5
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1667,7 +1666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: maybe if i sing to it?
+  m_text: i'll get some pillows...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36bd48f630b0082439f180858b2de049, type: 2}
   m_sharedMaterial: {fileID: 4972323673017611953, guid: 36bd48f630b0082439f180858b2de049,
@@ -1737,10 +1736,10 @@ MonoBehaviour:
   m_margin: {x: -32.24817, y: 0, z: -32.99341, w: 0}
   m_textInfo:
     textComponent: {fileID: 762717012}
-    characterCount: 22
+    characterCount: 24
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -1824,7 +1823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1f9f7673fe1427b4f8d5de3199fdd5e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7feb425771be1d444a899d6f8698ca30, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2094,7 +2093,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd1de69952029d24faec578daef702c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8bf8ca2cc6fc1c418a99b3bd35fc9ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4034,7 +4033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9aac5723ba290564db25ea805d2f33e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76dccd0f527f9a94cb4e7e67b23cdea5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
